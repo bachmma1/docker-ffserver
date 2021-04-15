@@ -99,14 +99,14 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 
 ## Player Setup
 
-# Video
+### Video
 ```bash
 $ ffplay http://[YOUR_FFSERVER_DOCKER_IP]:8090/camera.mjpeg
 $ vlc http://[YOUR_FFSERVER_DOCKER_IP]:8090/camera.mjpeg
 $ firefox http://[YOUR_FFSERVER_DOCKER_IP]:8090/camera.mjpeg
 ```
 
-#Snapshot
+### Snapshot
 ```bash
 $ firefox http://[YOUR_FFSERVER_DOCKER_IP]:8090/static-camera.jpg
 ```
