@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.13
+FROM ghcr.io/linuxserver/baseimage-alpine:3.8
 
 # set version label
 ARG BUILD_DATE
@@ -12,10 +12,10 @@ ENV S6_BEHAVIOUR_IF_STAGE2_FAILS=2
 # install packages
 RUN \
 echo "**** install packages ****" && \
-apk add --no-cache --upgrade \
+apk add --no-cache \
 	curl \
 	bash \
-	ffmpeg=3.4.6-r0
+	ffmpeg
 
 COPY root/ /
 
