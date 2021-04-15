@@ -11,7 +11,7 @@ The [ffmpeg](https://ffmpeg.org)
 
 Here are some example snippets to help you get started creating a container.
 
-### docker-compose ([recommended](https://docs.linuxserver.io/general/docker-compose))
+### docker-compose
 
 Compatible with docker-compose v2 schemas.
 
