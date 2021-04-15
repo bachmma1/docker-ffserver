@@ -6,4 +6,4 @@ if [ -n "${UMASK_SET}" ] && [ -z "${UMASK}" ]; then
 fi
 
 exec \
-	s6-setuidgid abc /usr/bin/ffmpeg "${FFMPEG_COMMAND}"
+	s6-setuidgid abc /usr/bin/ffmpeg ${FFMPEG_COMMAND}
