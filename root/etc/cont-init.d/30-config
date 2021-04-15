@@ -1,0 +1,18 @@
+#!/usr/bin/with-contenv bash
+
+# make our folders and links
+mkdir -p /config/ffserver
+
+#copy ffserver default config
+
+if [ ! -e "/config/ffserver/ffserver.conf" ]; then
+  cp -R /defaults/ffserver /conf/
+fi
+
+# permissions
+chown -R abc:abc /config
+chown -R abc:abc /data
+chmod -R 770 /config
+chmod -R 770 /data
+chmod -R +r /config
+chmod -R +r /data
